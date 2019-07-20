@@ -2,7 +2,8 @@ import boto3
 import botocore
 import click
 
-session = boto3.Session(profile_name='devaccount',region_name='ca-central-1')
+session = boto3.Session(profile_name='shotty')
+#session = boto3.Session(profile_name='devaccount',region_name='ca-central-1')
 ec2 = session.resource('ec2')
 
 def filter_instances(project):
